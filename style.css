@@ -3,30 +3,32 @@
 
 :root {
     --primary-color: white;
-    --primary-color-2: rgb(250, 250, 250);
-    --primary-color-3: rgb(181, 181, 181);
-    --background-color: rgb(255, 255, 255);
-    --secondary-color: black;
-    --secondary-color-2: rgb(85, 85, 85);
-    --button-background: rgb(53, 53, 53);
-    --button-text-hover: gray;
-    --button-border: rgb(53, 53, 53) 0.1rem solid;
-    --button-border-2: rgb(255, 255, 255) 0.1rem solid;
-    --container-border: rgb(163, 163, 163);
+    --primary-color-2: #3deb47;
+    --primary-color-3: #b6fcb9;
+    --background-color: rgb(19,212,32);
+    --background-gradient:linear-gradient(90deg, rgba(19,212,32,1) 0%, rgba(182,252,185,1) 50%, rgba(19,212,32,1) 100%);
+    --secondary-color: #013206;
+    --secondary-color-2: #0b8a15;
+    --button-background: radial-gradient(circle, rgba(61,235,71,1) 0%, rgba(10,189,22,1) 100%);;
+    --button-text-hover: #3deb47;
+    --button-border: #0abd16 0.1rem solid;
+    --button-border-2: #0e5915 0.1rem solid;
+    --container-border: #3deb47;
 }
 
 [theme="dark"] {
-    --primary-color: black;
-    --primary-color-2: rgb(39, 39, 39);
-    --primary-color-3: rgb(74, 74, 74);
-    --background-color: rgb(33, 33, 33);
-    --secondary-color: white;
-    --secondary-color-2: rgb(170, 170, 170);
-    --button-background: rgb(202, 202, 202);
-    --button-text-hover: lightgray;
-    --button-border: rgb(202, 202, 202) 0.1rem solid;
-    --button-border-2: rgb(0, 0, 0) 0.1rem solid;
-    --container-border: rgb(92, 92, 92);
+    --primary-color: #260428;
+    --primary-color-2: #833c88;
+    --primary-color-3: #650f6b;
+    --background-color: rgb(49,9,51);
+    --background-gradient: linear-gradient(90deg, rgb(33, 6, 34) 0%, rgb(59, 9, 65) 50%, rgb(33, 6, 34) 100%);
+    --secondary-color: #f0cef3;
+    --secondary-color-2: #c095c3;
+    --button-background: #74127e;
+    --button-text-hover: #cf33db;
+    --button-border: #98269e 0.1rem solid;
+    --button-border-2:  0.1rem solid;
+    --container-border: #cf33db;
 }
 
 * {
@@ -41,6 +43,7 @@ h3 {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+    background: var(--background-gradient);
 }
 
 html {
@@ -144,6 +147,7 @@ nav a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    background: transparent;
 }
 
 .menu-links a {
@@ -163,6 +167,7 @@ nav a:hover {
 .menu-links.open {
     max-height: 400px;
     gap: 3rem;
+    background-color: var(--primary-color-3);
 }
 
 .hamburger-icon.open span:first-child {
@@ -214,7 +219,7 @@ section {
     width: 400px;
     margin: auto 0;
     overflow: hidden;
-    justify-content: center;
+    object-fit: contain;
 }
 
 .section__pic-container img {
@@ -295,11 +300,11 @@ button {
 
 .btn-2:hover {
     border: var(--button-border);
-    background: var(--secondary-color);
+    background: var(--secondary-color-3);
 }
 
 .btn-2 {
-  background: none;
+  background: var(--primary-color-2);
 }
 
 #about {
@@ -335,7 +340,7 @@ button {
 .details-container {
     padding: 1rem;
     flex: 1;
-    background: var(--primary-color-2);
+    background: var(--primary-color-3);
     border-radius: 2rem;
     border: var(--button-border);
     border-color: var(--container-border);
@@ -398,7 +403,7 @@ article .icon {
 
 .color-container {
     border-color: var(--container-border);
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-color-3);
 }
 
 .project-img {
