@@ -3,10 +3,10 @@
 
 :root {
     --primary-color: white;
-    --primary-color-2: #3deb47;
-    --primary-color-3: #b6fcb9;
-    --background-color: rgb(19,212,32);
-    --background-gradient:linear-gradient(90deg, rgba(19,212,32,1) 0%, rgba(182,252,185,1) 50%, rgba(19,212,32,1) 100%);
+    --primary-color-2: #93e597;
+    --primary-color-3: #9bf49f;
+    --background-color: rgb(19, 202, 31);
+    --background-gradient:linear-gradient(90deg, rgb(209, 241, 211) 0%, rgba(182,252,185,1) 50%, rgb(132, 245, 139) 100%);
     --secondary-color: #013206;
     --secondary-color-2: #0b8a15;
     --button-background: radial-gradient(circle, rgba(61,235,71,1) 0%, rgba(10,189,22,1) 100%);;
@@ -168,6 +168,7 @@ nav a:hover {
     max-height: 400px;
     gap: 3rem;
     background-color: var(--primary-color-3);
+    border-color: var(--container-border);
 }
 
 .hamburger-icon.open span:first-child {
